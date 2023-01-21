@@ -1,0 +1,7 @@
+[user]
+name = Yourname
+email = youremail_on_github
+username = yourusername
+
+[http]
+sslVerify = false
