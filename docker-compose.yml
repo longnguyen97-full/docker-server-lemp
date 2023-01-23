@@ -84,6 +84,7 @@ services:
     ports:
       - "127.0.0.1:${UNGIT_PORT}:8448"
     volumes:
+      - ${DOCUMENT_ROOT-./www}:/var/www/html:rw
       - ${GIT_CONF-./git/.gitconfig}:/home/node/.gitconfig
     networks:
       - "${NETWORK}"
